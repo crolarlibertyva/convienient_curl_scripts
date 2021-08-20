@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Introspection at $AS_HOST"
+echo "Refresh at $AS_HOST"
 curl -v -X POST \
   -d "refresh_token=$1" \
   -d "grant_type=refresh_token" \

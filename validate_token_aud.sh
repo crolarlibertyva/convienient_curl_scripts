@@ -4,7 +4,8 @@
 curl -v -X POST \
   http://localhost:3000/internal/auth/v2/validation \
   -H "Authorization: Bearer $1" \
-  --data-urlencode "aud[]=https://sandbox-api.va.gov/services/fhir"
+  --data "strict=false" \
+  --data-urlencode "aud[]=$2"
   
   
   

@@ -2,8 +2,8 @@
 # Team Pivot!
 #
 curl -v -X POST \
-  http://localhost:3000/internal/auth/v2/validation \
+  https://dev-api.va.gov/internal/auth/v1/validation/v2 \
   -H "Authorization: Bearer $1"
-  
+  --data-urlencode "apiKey=c1m7q2mOpDxSFxh5R1UCfovfiR1KAgAm"
   
   

@@ -5,4 +5,4 @@ docker run -i --network container:lighthouse-oauth-proxy_oauth-proxy_1 --rm vasd
      --client-secret=$CC_CLIENT_SECRET \
      --authorization-url=http://localhost:7100/oauth2/health/system/v1 \
      --scope="launch" \
-     --launch="eyJwYXRpZW50IjoiMTAwMDcyMDEwMFYyNzEzODcifQo=" | jq
+     --launch="123V456" | jq

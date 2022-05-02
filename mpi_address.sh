@@ -23,30 +23,22 @@ curl --location --request POST 'http://localhost:9090/psim_webservice/IdMWebServ
       </sender>
       <controlActProcess classCode="CACT" moodCode="EVN">
         <code code="PRPA_TE201305UV02" codeSystem="2.16.840.1.113883.1.6"/>
-        <dataEnterer typeCode="ENT" contextControlCode="AP">
-          <assignedPerson classCode="ASSIGNED">
-            <id extension="796130115" root="2.16.840.1.113883.777.999"/>
-            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
-              <name>
-                <given>Tamara</given>
-                <given>E</given>
-                <family>Ellis</family>
-              </name>
-            </assignedPerson>
-          </assignedPerson>
-        </dataEnterer>
         <queryByParameter>
           <queryId root="1.2.840.114350.1.13.28.1.18.5.999" extension="18204"/>
           <statusCode code="new"/>
           <modifyCode code="MVI.COMP2"/>
           <initialQuantity value="1"/>
           <parameterList>
+            <livingSubjectBirthTime>
+              <value value="19670619"/>
+              <semanticsText>Date of Birth</semanticsText>
+            </livingSubjectBirthTime>
             <patientAddress>
               <value use="PHYS">
-                <streetAddressLine>MILITARY ADDY 3</streetAddressLine>
-                <city>DPO</city>
-                <state>MI</state>
-                <postalCode>22312</postalCode>
+                <streetAddressLine>BEHIND TAHINI RIVER</streetAddressLine>
+                <city>Austin</city>
+                <state>TX</state>
+                <postalCode>78741</postalCode>
                 <country>USA</country>
               </value>
               <semanticsText>Patient Address</semanticsText>

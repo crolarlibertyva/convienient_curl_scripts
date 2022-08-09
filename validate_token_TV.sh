@@ -2,9 +2,9 @@
 # Team Pivot!
 #
 curl -v -X POST \
-  http://localhost:3000/internal/auth/v2/validation \
+  ${TV_URL}/auth/v2/validation \
   -H "Authorization: Bearer $1" \
-  --data-urlencode "aud[]=api://default"
+  --data-urlencode "aud=api://default" 
   
   
   

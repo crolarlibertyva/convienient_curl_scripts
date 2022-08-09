@@ -35,11 +35,11 @@ curl --location --request POST 'http://localhost:9090/psim_webservice/IdMWebServ
             </livingSubjectBirthTime>
             <patientAddress>
               <value use="PHYS">
-                <streetAddressLine>BEHIND TAHINI RIVER</streetAddressLine>
-                <city>Austin</city>
-                <state>TX</state>
+                <streetAddressLine xmlns="" xmlns:ns3="urn:hl7-org:v3">BEHIND TAHINI RIVER</streetAddressLine>
+                <city xmlns="" xmlns:ns3="urn:hl7-org:v3">Austin</city>
+                <state xmlns="" xmlns:ns3="urn:hl7-org:v3">TX</state>
                 <postalCode>78741</postalCode>
-                <country>USA</country>
+                <country xmlns="" xmlns:ns3="urn:hl7-org:v3">USA</country>
               </value>
               <semanticsText>Patient Address</semanticsText>
              </patientAddress>

@@ -1,8 +1,8 @@
 #!/bin/sh
-docker run -i --network container:lighthouse-oauth-proxy_oauth-proxy_1 --rm vasdvp/lighthouse-auth-utils:latest \
+docker run -i --network container:lighthouse-oauth-proxy-oauth-proxy-1 --rm vasdvp/lighthouse-auth-utils:latest \
      auth-cc \
      --client-id=$CC_CLIENT_ID \
      --client-secret=$CC_CLIENT_SECRET \
-     --authorization-url=http://localhost:7100/oauth2/health/system/v1 \
-     --scope="launch" \
-     --launch="eyJwYXRpZW50IjoiMTAwMDcyMDEwMFYyNzEzODcifQo=" | jq
+     --authorization-url=https://dev-api.va.gov/oauth2/veteran-confirmation/system/v1 \
+     --scope="enrolled_benefits.read veteran_status.read" \
+      | jq

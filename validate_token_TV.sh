@@ -2,7 +2,7 @@
 # Team Pivot!
 #
 curl -v -X POST \
-  ${TV_URL}/auth/v2/validation \
+  ${TV_URL}\
   -H "Authorization: Bearer $1" \
   --data-urlencode "aud=api://default" 
   

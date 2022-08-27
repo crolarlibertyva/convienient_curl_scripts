@@ -6,5 +6,4 @@ node \
      --client-secret=$CC_CLIENT_SECRET \
      --authorization-url=$AS_HOST \
      --scope="launch" \
-     --launch="ewogICJwYXRpZW50IjogIjEyMzRWNTY3OCIsCiAgImVuY291bnRlciI6ICI5ODc2LTU0MzItMTAwMCIKfQ==" \
       | jq

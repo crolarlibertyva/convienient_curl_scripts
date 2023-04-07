@@ -2,7 +2,7 @@
 # Team Pivot!
 #
 curl -v -X POST \
-  http://localhost:8080/auth/sts/exchange \
+  http://localhost:8081/auth/sts/v1/exchange \
   -H "Authorization: Bearer $1" \
   --data-urlencode "aud=api://default" 
   

@@ -3,9 +3,7 @@
 auth_cmd="node node_modules/lighthouse-auth-utils/auth.js"
 auth_cc_cmd="node node_modules/lighthouse-auth-utils/auth-cc.js"
 
-do_client_credentials() { 
-  local scope=$1
-  local launch=$2
+do_token() { 
   local url=
 
   if [[ $AS_HOST == *"localhost"* ]];
@@ -16,11 +14,13 @@ do_client_credentials() {
   fi  
   npm i
   local cc
-  cc="$($auth_cmd \
+  token="$($auth_cmd \
           --client-id="$CC_CLIENT_ID" \
           --client-secret="$CC_CLIENT_SECRET" \
           --authorization-url=$url \
-          --scope="$scope" \
-          --launch="$launch")"
-  echo "$cc"
-}    
+          --scope="$SCOPES" \
+          ")"
+  echo "$token";
+}
+
+do_token()

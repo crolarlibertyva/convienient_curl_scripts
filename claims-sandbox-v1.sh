@@ -1,0 +1,1 @@
+curl -X GET 'https://sandbox-api.va.gov/services/claims/v1/claims' --header "Authorization: Bearer $ACCESS_TOKEN"

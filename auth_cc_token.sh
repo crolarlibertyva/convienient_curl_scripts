@@ -5,6 +5,6 @@ node \
      --client-id=$CC_CLIENT_ID \
      --client-secret=$CC_CLIENT_SECRET \
      --authorization-url=$AS_HOST \
-     --scope="launch" \
+     --scope="veteran_status.read" \
      --launch="ewogICJwYXRpZW50IjogIjEyMzRWNTY3OCIsCiAgImVuY291bnRlciI6ICI5ODc2LTU0MzItMTAwMCIKfQ==" \
       | jq

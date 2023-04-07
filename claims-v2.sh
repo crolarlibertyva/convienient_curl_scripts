@@ -1,0 +1,1 @@
+curl -X GET 'http://localhost:3000/services/claims/v2/veterans/1012667145V762142/claims' --header "Authorization: Bearer $ACCESS_TOKEN"
